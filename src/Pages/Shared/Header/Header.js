@@ -46,7 +46,7 @@ const Header = () => {
                         <Nav.Link><Link className='fs-4 text-light text-decoration-none' to='/courses'>Courses</Link></Nav.Link>
                     </Nav>
                     <Nav>
-                        <Nav.Link href="#deets">
+                        <Nav.Link>
                             {
                                 user?.uid ?
                                     <>
@@ -59,7 +59,7 @@ const Header = () => {
                                     </>
                             }
                         </Nav.Link>
-                        <Nav.Link eventKey={2} href="#memes">
+                        <Nav.Link eventKey={2}>
                             {
                                 user?.photoURL ?
                                     <OverlayTrigger
