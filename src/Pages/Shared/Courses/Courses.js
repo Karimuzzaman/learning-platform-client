@@ -5,6 +5,7 @@ import Row from 'react-bootstrap/Row';
 import { useEffect } from 'react';
 import { useState } from 'react';
 import { Button } from 'react-bootstrap';
+import { Link } from 'react-router-dom';
 
 const Courses = () => {
     const [courses, setCourses] = useState([]);
@@ -25,9 +26,9 @@ const Courses = () => {
                         </Card.Text>
                         <Card.Text>Number of Students:{course.total_student}</Card.Text>
                         <div className="mb-2">
-                            <Button variant="primary" size="lg">
-                                Course Content
-                            </Button>{' '}
+                            <Button variant="outline-info" size="lg">
+                                <Link to={`/courses/${course.id}`} className='fs-5 text-warning text-decoration-none link-danger'>Course Detail</Link>
+                            </Button>
                         </div>
                     </Card.ImgOverlay>
 
