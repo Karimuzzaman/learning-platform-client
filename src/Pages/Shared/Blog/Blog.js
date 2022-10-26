@@ -15,13 +15,20 @@ const Blog = () => {
             <Accordion.Item eventKey="1">
                 <Accordion.Header>Why are you using 'firebase'? What other options do you have to implement authentication?</Accordion.Header>
                 <Accordion.Body>
-                    Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-                    eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
-                    minim veniam, quis nostrud exercitation ullamco laboris nisi ut
-                    aliquip ex ea commodo consequat. Duis aute irure dolor in
-                    reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla
-                    pariatur. Excepteur sint occaecat cupidatat non proident, sunt in
-                    culpa qui officia deserunt mollit anim id est laborum.
+                    <h2>Cause of using 'firebase: '</h2> <br />
+                    Most apps need to know the identity of a user. Knowing a user's identity allows an app to securely save user data in the cloud and provide the same personalized experience across all of the user's devices. <br /> <br />
+                    Firebase Authentication provides backend services, easy-to-use SDKs, and ready-made UI libraries to authenticate users to your app. It supports authentication using passwords, phone numbers, popular federated identity providers like Google, Facebook and Twitter, and more. <br /> <br />
+                    Firebase Authentication integrates tightly with other Firebase services, and it leverages industry standards like OAuth 2.0 and OpenID Connect, so it can be easily integrated with your custom backend. <br /> <br />
+
+                    <h2> Alternatives of firebase authentication: </h2>
+                    <li>Auth0</li>
+                    <li>MongoDB</li>
+                    <li>Passport</li>
+                    <li>Okta</li>
+                    <li>JSON Web Token</li>
+                    <li>Keycloak</li>
+                    <li>Amazon Cognito</li>
+
                 </Accordion.Body>
             </Accordion.Item>
             <Accordion.Item eventKey="2">
