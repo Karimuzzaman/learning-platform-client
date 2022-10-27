@@ -7,9 +7,10 @@ import Navbar from 'react-bootstrap/Navbar';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import logo_1 from '../../../logo_1.png';
-import { FaUser } from 'react-icons/fa';
+import { FaUser, FaSun, FaMoon } from 'react-icons/fa';
 import OverlayTrigger from 'react-bootstrap/OverlayTrigger';
 import Tooltip from 'react-bootstrap/Tooltip';
+import { useState } from 'react';
 
 // this is header.
 
@@ -26,6 +27,11 @@ const Header = () => {
             .then(() => { })
             .catch(error => console.error(error))
     }
+
+    let [changeText, setChangeText] = useState(true);
+    const handleChange = () => {
+        return setChangeText(!changeText);
+    };
     return (
         <Navbar collapseOnSelect expand="lg" bg="dark" variant="dark">
             <Container>
@@ -44,8 +50,10 @@ const Header = () => {
                     <Nav className="me-auto">
                         <Nav.Link><Link className='fs-4 text-light text-decoration-none' to='/blog'>Blog</Link></Nav.Link>
                         <Nav.Link><Link className='fs-4 text-light text-decoration-none' to='/faq'>FAQ</Link></Nav.Link>
-                        <Nav.Link><Link className='fs-4 text-light text-decoration-none' to='/login'>Login</Link></Nav.Link>
                         <Nav.Link><Link className='fs-4 text-light text-decoration-none' to='/courses'>Courses</Link></Nav.Link>
+                        <Nav.Link>
+                            <button className='fs-4' onClick={() => handleChange()}>{changeText ? <FaSun /> : <FaMoon />}</button>
+                        </Nav.Link>
                     </Nav>
                     <Nav>
                         <Nav.Link>
@@ -57,7 +65,6 @@ const Header = () => {
                                     :
                                     <>
                                         <Link className='fs-4 text-light text-decoration-none me-2' to="/login">Login</Link>
-                                        <Link className='fs-4 text-light text-decoration-none' to="/register">Register</Link>
                                     </>
                             }
                         </Nav.Link>
