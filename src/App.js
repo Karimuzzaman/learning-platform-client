@@ -6,6 +6,7 @@ import { routes } from './Routes/Routes/Routes';
 function App() {
   return (
     <div className="">
+      {/* creating react router provider */}
       <RouterProvider router={routes}></RouterProvider>
     </div>
   );

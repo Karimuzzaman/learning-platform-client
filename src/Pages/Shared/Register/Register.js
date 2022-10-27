@@ -4,6 +4,9 @@ import Form from 'react-bootstrap/Form';
 import { Link } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
+
+// creating register system.
+
 const Register = () => {
     const [error, setError] = useState('');
     const { createUser, updateUserProfile } = useContext(AuthContext);

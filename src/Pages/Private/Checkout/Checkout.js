@@ -3,6 +3,7 @@ import { useContext } from 'react';
 import { useLoaderData } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 
+// // creating checkout private route page.
 const Checkout = () => {
     const checkOut = useLoaderData();
     const { user } = useContext(AuthContext)

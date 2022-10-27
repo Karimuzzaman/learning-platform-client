@@ -7,6 +7,8 @@ import { Link, useLocation, useNavigate } from 'react-router-dom';
 import { AuthContext } from '../../../contexts/AuthProvider/AuthProvider';
 import { FaGoogle, FaGithub } from "react-icons/fa";
 
+
+// creating login system
 const Login = () => {
     const [error, setError] = useState('');
     const { signIn, providerLogin, githubProviderLogin } = useContext(AuthContext);

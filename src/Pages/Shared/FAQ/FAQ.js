@@ -1,6 +1,8 @@
 import React from 'react';
 import Accordion from 'react-bootstrap/Accordion';
 
+// This is faq page.
+
 const FAQ = () => {
     return (
         <Accordion className='mt-3'>

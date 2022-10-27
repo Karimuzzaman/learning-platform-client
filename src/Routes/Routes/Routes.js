@@ -9,6 +9,7 @@ import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
 
+// creating react router.
 export const routes = createBrowserRouter([
     {
         path: '/',

@@ -4,6 +4,8 @@ import { Outlet } from 'react-router-dom';
 import Header from '../Pages/Shared/Header/Header';
 import LeftSideNav from '../Pages/Shared/LeftSideNav/LeftSideNav';
 
+// This is outlet & available in all pages.
+
 const Main = () => {
     return (
 

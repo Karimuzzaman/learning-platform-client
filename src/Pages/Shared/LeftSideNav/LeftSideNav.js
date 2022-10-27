@@ -3,6 +3,8 @@ import { useEffect } from 'react';
 import { useState } from 'react';
 import { Link } from 'react-router-dom';
 
+// This is left side nav.
+
 const LeftSideNav = () => {
     const [categories, setCategories] = useState([]);
     useEffect(() => {
