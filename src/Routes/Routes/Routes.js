@@ -5,6 +5,7 @@ import Blog from "../../Pages/Shared/Blog/Blog";
 import CourseDetail from "../../Pages/Shared/CourseDetail/CourseDetail";
 import Courses from "../../Pages/Shared/Courses/Courses";
 import FAQ from "../../Pages/Shared/FAQ/FAQ";
+import Home from "../../Pages/Shared/Home/Home";
 import Login from "../../Pages/Shared/Login/Login";
 import Register from "../../Pages/Shared/Register/Register";
 import PrivateRoute from "../PrivateRoute/PrivateRoute";
@@ -15,6 +16,11 @@ export const routes = createBrowserRouter([
         path: '/',
         element: <Main></Main>,
         children: [
+            {
+                path: '/',
+                element: <Home></Home>
+
+            },
             {
                 path: '/login',
                 element: <Login></Login>
